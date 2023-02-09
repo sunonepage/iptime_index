@@ -1,0 +1,305 @@
+@charset "utf-8";
+body,header,div,h1,nav,ul,li,main,section,h2,figure,
+table,tbody,tr,td,footer,address,article{ margin: 0px; padding: 0px; }
+a{ text-decoration: none; color: #151515; }
+ul{ list-style: none; }
+img{ display: block; }
+body{ font-family: "맑은 고딕",sans-serif; font-size: 16px; }
+address{ font-style: normal; }
+
+
+/*레이아웃*/
+#header{ width:1280px; height: 95px; position: relative; margin: 0px auto; }
+#gnb{ 
+    height: 60px; line-height: 60px;  
+    margin: 0px auto;
+}
+#banner{ height: 523px; width: 1920px; margin: 0px auto;}
+#product{  width:1450px; height: 650px; margin: 0px auto;}
+#recommendation{  width: 2800px; height: 676px; position: relative; margin: 0px auto; }
+#news_container{  width:1350px; height: 500px; margin: 0px auto; }
+#consumer_service{  width:1920px; height: 715px; margin: 0px auto; }
+#footer{  width:1920px; height: 210px; margin: 0px auto; }
+
+
+
+/*헤더*/
+#header>.main_logo{
+    float: left;   margin-top: 33px;  
+    width: 170px; height: 62px;
+}
+#header>.main_logo>h1{
+    background: url("img/main_logo.png")no-repeat;
+    width: 170px; height: 62px;
+    text-indent: -9999px;   
+}
+#header>.login{
+    width: 190px; height: 27px;
+    float: right;
+    margin-top: 53px;
+}
+#header>.login>ul>li{
+    display: inline-block;
+    padding-right: 10px;
+}
+/*#header>.login>a{
+    display: block;
+    padding-right: 10px;
+    float: left;
+}*/
+
+
+/*네비게이션*/
+#gnb{
+    position:relative;  height:60px;  
+}
+#gnb>.menu{
+    width:1280px; height: 60px;
+    /*margin-left: 523px;*/ position: relative;
+    z-index: 9999; margin:0 auto;
+}
+#gnb>.menu>ul>li{
+    width: 320px; height: 60px;
+	position: relative; float: left;
+}
+#gnb>.menu>ul>li>a{
+    display:block; line-height: 60px;  
+    font-size:18px;  font-weight: bold;
+    padding-left: 150px;
+}
+#gnb>.menu>ul>li>.sub{
+    position:absolute;  width:320px;  
+    height:150px; line-height:30px;  padding-left: 150px;
+    left:0px;  top:60px;  padding-top:15px;
+    display: none;
+}
+#gnb>.menu>ul>li>.sub a{
+    color:#fff;  font-weight: bold;
+}
+#gnb>.gnb_bg{
+    position:absolute;  left:0px;  top:60px;  z-index: 99;
+    height:165px;  width:100%; 
+    background:rgba(0,0,0,0.6);
+    display: none; 
+}  
+
+/*슬라이드 배너*/
+#banner>.sildes{
+    height: 523px; width: 1920px;
+    position: relative; float: left;
+    
+}
+#banner>.sildes>div{
+    position: absolute;
+    top: 0;
+}
+
+
+/*제품 카테고리*/
+#product>h2{
+    margin-top: 90px; 
+    width: 80px; height: 40px;
+    margin-left: 700px;
+}
+#product>.product_category{
+    width: 1400px; height: 385px;
+    position: relative;
+    margin-top: 55px; margin-bottom: 250px;
+    margin-left: 30px;
+}
+#product>.product_category>.products{
+    width: 440px; height: 380px;
+    border: 1px solid #d9d9d9;
+    background: #d9d9d9; float: left;
+    margin-left: 20px; box-sizing: border-box;
+    border-radius: 20px;
+}
+#product>.product_category>.products>.product_img{
+    position: relative;
+}
+#product>.product_category>.products>.product_name{
+    position: absolute;
+    top: 300px; padding-left: 180px;
+}
+
+
+/*추천 제품*/
+#recommendation>.recommendation_left{
+    width: 960px; height: 676px;
+    float: left; position: relative;
+}
+#recommendation>.recommendation_left>.recommendation_img{
+    position: relative;
+}
+#recommendation>.recommendation_left>.recommendation_img>.recommend_title{
+    position: absolute; 
+    left: 360px; padding-top: 60px;
+    color: #fff; font-size: 2em;
+}
+#recommendation>.recommendation_right{
+    width: 1840px; height: 676px;
+    position: relative; float: right; 
+    background-color: #d9d9d9;
+    
+}
+#recommendation>.recommendation_right>.re_product{
+    width: 415px; height: 630px;
+    float: left; 
+    margin-top: 100px; padding-left: 80px;
+}
+#recommendation>.recommendation_right>.re_product>.re_product_img{
+    width: 400px; height: 350px;
+    border: 1px solid #fff;
+    background: #fff; box-sizing: border-box;
+    border-radius: 20px;
+}
+#recommendation>.recommendation_right>.re_product>.explanation{
+    margin-bottom: 35px;
+}
+#recommendation>.recommendation_right>.re_product>.re_product_img>.re_name{
+    text-align: center; font-size: 1.5em;
+    padding: 15px; font-style: bold;
+}
+
+/* 공지사항, 뉴스*/
+#news_container>.news_box{
+    width: 1350px; height: 420px;
+    margin-top: 150px; position: relative;
+}
+#news_container>.news_box>.notice{
+    width: 630px; height: 410px;
+    float: left; 
+}
+#news_container>.news_box>.notice>.notice_title{
+    width: 630px; height: 60px;
+    position: relative;
+}
+#news_container>.news_box>.notice>.notice_title>h2{
+    margin-bottom: 10px;
+    width: 150px; height: 45px;
+    float: left; line-height: 60px;
+}
+#news_container>.news_box>.notice>.notice_title>a{
+    margin-left: 400px; position: absolute;
+    display: inline-block;
+    width: 55px; height: 25px;
+    margin-top: 30px;
+}
+#news_container>.news_box>.notice>table{
+    width: 620px; height: 300;
+    border-top: 2px solid #151515;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#news_container>.news_box>.notice>table>tbody td{
+    padding-top: 15px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+#news_container>.news_box>.news{
+    width: 630px; height: 410px;
+    float: right;
+}
+#news_container>.news_box>.news>.news_title{
+    width: 630px; height: 60px;
+    position: relative;
+}
+#news_container>.news_box>.news>.news_title>h2{
+    margin-bottom: 10px;
+    width: 150px; height: 45px;
+    float: left; line-height: 60px;
+}
+#news_container>.news_box>.news>.news_title>a{
+    margin-left: 400px; position: absolute;
+    display: inline-block;
+    width: 55px; height: 25px;
+    margin-top: 30px;
+}
+#news_container>.news_box>.news>table{
+    width: 620px; height: 300;
+    border-top: 2px solid #151515;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#news_container>.news_box>.news>table>tbody td{
+    padding-top: 15px; 
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+/*고객지원*/
+#consumer_service>.serviceBox{
+    width: 1920px; height: 490px;
+    position: relative;
+}
+#consumer_service>.serviceBox>.service_left{
+    width: 900px; height: 485px;
+    float: left;
+}
+#consumer_service>.serviceBox>.service_right{
+    width: 1020px; height: 485px;
+    position: relative; float: right;
+    background-color: #151515;
+}
+#consumer_service>.serviceBox>.service_right>.service_tiltle{
+    width: 140px; height: 55px;
+    position: absolute;
+    color: #fff;
+    margin-top: 75px; margin-left: 65px;
+}
+#consumer_service>.serviceBox>.service_right>.service_icon{
+    width: 730px; height: 200px;
+    margin-top: 210px; margin-left: 85px;
+}
+#consumer_service>.serviceBox>.service_right>.service_icon>ul{
+    overflow:hidden;
+}
+#consumer_service>.serviceBox>.service_right>.service_icon>ul>li{
+    float:left;  margin-left:30px;   width:150px;  
+}
+#consumer_service>.serviceBox>.service_right>.service_icon>ul>li:first-child{
+    margin-left:0px;
+}
+#consumer_service>.serviceBox>.service_right>.service_icon a{
+    display: block;  
+    width: 150px; height: 30px;  line-height: 30px;  padding-top:120px;
+    color: #fff;   text-align: center; font-weight:bold;
+} 
+#consumer_service>.serviceBox>.service_right>.service_icon>ul>li:nth-child(1)>a{
+    background:url("img/faq.png") no-repeat center 15px;
+}
+#consumer_service>.serviceBox>.service_right>.service_icon>ul>li:nth-child(2)>a{
+    background:url("img/q&a.png") no-repeat center 15px;
+}
+#consumer_service>.serviceBox>.service_right>.service_icon>ul>li:nth-child(3)>a{
+    background:url("img/down.png") no-repeat center 15px;
+}
+#consumer_service>.serviceBox>.service_right>.service_icon>ul>li:nth-child(4)>a{
+    background:url("img/service.png") no-repeat center 15px;
+}
+
+
+
+/*풋터*/
+#footer>.footer_inner{
+    width: 1920px; height: 210px;   
+    position: relative;
+    background-color: #dddddd;
+    padding-left: 120px;
+    padding-top: 80px;
+}
+#footer>.footer_inner>.footer_logo{
+    width: 308px; height: 76px;
+    float: left; margin-left: 230px;
+}
+#footer>.footer_inner>address{
+    width: 975px; height: 95px;
+    position: absolute;
+    top: 70px;
+    left: 920px;
+}
+
+
+
+
